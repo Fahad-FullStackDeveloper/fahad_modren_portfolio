@@ -12,7 +12,7 @@ export function SiteFooter() {
         </div>
         <div className="flex items-center space-x-4">
           <Link
-            href="https://github.com/fahadkhakwani"
+            href="https://github.com/Fahad-FullStackDeveloper"
             target="_blank"
             rel="noreferrer"
             className="rounded-full p-2 transition-colors hover:bg-muted"
@@ -21,7 +21,7 @@ export function SiteFooter() {
             <span className="sr-only">GitHub</span>
           </Link>
           <Link
-            href="https://twitter.com/fahadkhakwani"
+            href="https://x.com/FahadKhakwani25"
             target="_blank"
             rel="noreferrer"
             className="rounded-full p-2 transition-colors hover:bg-muted"
@@ -30,7 +30,7 @@ export function SiteFooter() {
             <span className="sr-only">Twitter</span>
           </Link>
           <Link
-            href="https://linkedin.com/in/fahadkhakwani"
+            href="https://www.linkedin.com/in/fahad-khakwani/"
             target="_blank"
             rel="noreferrer"
             className="rounded-full p-2 transition-colors hover:bg-muted"
@@ -39,7 +39,7 @@ export function SiteFooter() {
             <span className="sr-only">LinkedIn</span>
           </Link>
           <Link
-            href="https://instagram.com/fahadkhakwani"
+            href="https://www.instagram.com/fahad.khakwani/"
             target="_blank"
             rel="noreferrer"
             className="rounded-full p-2 transition-colors hover:bg-muted"

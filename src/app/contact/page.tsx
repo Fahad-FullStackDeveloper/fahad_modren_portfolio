@@ -2,7 +2,7 @@
 
 import type React from "react";
 import Link from "next/link";
-
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, Phone, MapPin, Loader2 } from "lucide-react";
@@ -35,22 +35,18 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      // This is where you would integrate EmailJS
-      // For example:
-      // await emailjs.send(
-      //   "service_id",
-      //   "template_id",
-      //   {
-      //     from_name: formData.name,
-      //     from_email: formData.email,
-      //     subject: formData.subject,
-      //     message: formData.message,
-      //     to_email: "fahadyousufkhakwani@gmail.com"
-      //   },
-      //   "user_id"
-      // )
-
-      // Simulate API call
+      await emailjs.send(
+        "service_id",
+        "template_id",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: "fahadyousufkhakwani@gmail.com"
+        },
+        "user_id"
+      )
       await new Promise((resolve) => setTimeout(resolve, 1500));
 
       toast({
@@ -128,12 +124,12 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Phone</h3>
-                      <a
-                        href="tel:+1234567890"
+                      <Link
+                        href="mob:+923129092620"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +1 (234) 567-890
-                      </a>
+                        +92 (312) 909-2620
+                      </Link>
                     </div>
                   </div>
 
@@ -144,7 +140,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium mb-1">Location</h3>
                       <p className="text-muted-foreground">
-                        New York, NY, United States
+                        Karachi, Sindh, Pakistan
                       </p>
                     </div>
                   </div>
@@ -154,7 +150,7 @@ export default function ContactPage() {
                   <h3 className="font-medium mb-4">Follow Me</h3>
                   <div className="flex space-x-4">
                     <Link
-                      href="https://github.com/fahadkhakwani"
+                      href="https://github.com/Fahad-FullStackDeveloper"
                       target="_blank"
                       rel="noreferrer"
                       className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/10 transition-colors"
@@ -173,7 +169,7 @@ export default function ContactPage() {
                       </svg>
                     </Link>
                     <Link
-                      href="https://twitter.com/fahadkhakwani"
+                      href="https://x.com/FahadKhakwani25"
                       target="_blank"
                       rel="noreferrer"
                       className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/10 transition-colors"
@@ -188,7 +184,7 @@ export default function ContactPage() {
                       </svg>
                     </Link>
                     <Link
-                      href="https://linkedin.com/in/fahadkhakwani"
+                      href="https://www.linkedin.com/in/fahad-khakwani/"
                       target="_blank"
                       rel="noreferrer"
                       className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/10 transition-colors"
@@ -203,7 +199,7 @@ export default function ContactPage() {
                       </svg>
                     </Link>
                     <Link
-                      href="https://instagram.com/fahadkhakwani"
+                      href="https://www.instagram.com/fahad.khakwani/"
                       target="_blank"
                       rel="noreferrer"
                       className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/10 transition-colors"
