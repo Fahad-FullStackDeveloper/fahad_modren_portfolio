@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     description: "Full Stack Developer specializing in modern web technologies",
     creator: "@fahadkhakwani",
   },
+  icons: {
+    icon: "/favicon.ico", // Main tab icon
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico", // Optional for Apple devices
+  },
 }
 
 export default function RootLayout({
