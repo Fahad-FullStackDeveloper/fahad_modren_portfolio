@@ -8,6 +8,12 @@ export const projectType = defineType({
   icon: CodeBlockIcon,
   fields: [
     defineField({
+      name: 'id',
+      title: 'ID',
+      type: 'string',
+      description: 'A unique identifier for the project (e.g., project-1)',
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',

@@ -8,6 +8,12 @@ export const blogType = defineType({
   icon: DocumentIcon,
   fields: [
     defineField({
+      name: 'id',
+      title: 'ID',
+      type: 'string',
+      description: 'A unique identifier for the blog post (e.g., post-1)',
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
